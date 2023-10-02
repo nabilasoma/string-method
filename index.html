@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h3>JavaScript String Method</h3>
+    <P>String length <br/>
+        String slice() <br/>
+        String substring() <br/>
+        String substr() <br/>
+        String replace() <br/>
+        String replaceAll() <br/>
+        String toUpperCase() <br/>
+        String toLowerCase() <br/>
+        String concat()</P>
+    <p>The length property returns the length of a string</p>
+    <small>let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br/>
+    let length = text.length;</small>
+
+    <h4>There are 3 methods for extracting a part of a string:</h4>
+    <p>slice(start, end)<br/>
+    substring(start, end)<br/>
+    substr(start, length)
+    </p>
+
+    <h3>JavaScript String slice()</h3>
+    <p>slice() extracts a part of a string and returns the extracted part in a new string.<br/>
+
+        The method takes 2 parameters: start position, and end position (end not included).</p>
+
+        <h3>Template literals provide an easy way to interpolate variables and expressions into strings.</h3>
+        <p>let firstName = "Nabila";<br/>
+            let lastName = "Niar";<br/>
+            
+         let text = `Welcome ${firstName}, ${lastName}!`;<br/>
+         let price = 10;<br/>
+         let VAT = 0.25;<br/>
+         
+         let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;<br/>
+        </p>
+        <p>let header = "Templates Literals";<br/>
+            let tags = ["template literals", "javascript", "es6"];<br/>
+            
+            let html = `<h2>${header}</h2><ul>`;<br/>
+            for (const x of tags) {<br/>
+              html += `<li>${x}</li>`;<br/>
+            }
+            </p>
+
+</body>
+</html>
